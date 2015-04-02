@@ -1,0 +1,223 @@
+body,div,p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
+}
+.bodyPage h3{
+    margin-top: 30px;
+}
+@-webkit-keyframes myFirst {
+    from {left: 0px;}
+    to {left: -3500px;}
+}
+@keyframes myFirst {
+    from {left: 0px;}
+    to {left: -3500px;}
+}
+.body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.threeBlocks {
+    position: fixed;
+    height: 100%;
+}
+#instruction{
+    color: #FFF;
+    background: #2C2C2C;
+    width: 22%;
+    padding: 10px;
+    position: absolute;
+    left:0;
+    z-index: 1;
+}
+#start{
+    margin: 0;
+    padding: 5px 0 0 0 ;
+    height: 30px;
+    background: #fff;
+    color:black;
+    text-align: center;
+}
+#start:hover{
+    color:#fff;
+    background: black;
+    cursor: pointer;
+}
+#cardioGrafic{
+   z-index: 1;
+   width: 28%;
+   background: url('../img/foto1.jpg') ;
+  }
+#mySVG{
+    position: absolute;
+    top:100px;
+    height: 300px;
+    width: 600%;
+    z-index: 2;
+}
+#buttons{
+    z-index: 1;
+    background: #F5F1EE;
+    width: 50%;
+}
+.but{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+    background-image: linear-gradient(top, #f4f1ee, #fff);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px rgba(219, 21, 81, 0.8), 
+    inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+    -webkit-animation: beforeAniButton 1.3s linear 0s infinite alternate; 
+    animation: beforeAniButton 1.3s linear 0s infinite alternate;
+}
+.butNew{
+    box-shadow: 0px 0px 5px 2px #2232CF, 
+    inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+    -webkit-animation: afterAniButton 1.3s linear 0s infinite alternate; 
+    animation: afterAniButton 1.3s linear 0s infinite alternate;
+}
+@-webkit-keyframes beforeAniButton{
+    to {box-shadow: 0px 0px 40px 10px rgba(219, 21, 81, 0.8), 
+    inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);}
+}
+@keyframes beforeAniButton{
+    to {box-shadow: 0px 0px 40px 10px rgba(219, 21, 81, 0.8), 
+    inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);}
+}
+@-webkit-keyframes afterAniButton{
+    to {box-shadow: 0px 0px 40px 10px #2232CF, 
+    inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);}
+    to {box-shadow: 0px 0px 40px 10px #2232CF, 
+    inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);}
+}
+@keyframes afterAniButton{
+    to {box-shadow: 0px 0px 40px 10px #2232CF, 
+    inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);}
+    to {box-shadow: 0px 0px 40px 10px #2232CF, 
+        inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);}
+    }
+#button1{
+    position: absolute;
+    left: 188px;
+    top: 175px;
+}
+#button2{
+   position: absolute;
+   left: 300px;
+   top: 120px;
+}
+#button3{
+    position: absolute;
+    left: 410px;
+    top: 175px;
+}
+#button4{
+    position: absolute;
+    left: 500px;
+    top: 300px;
+}
+#button5{
+    position: absolute;
+    left: 100px;
+    top: 500px;
+}
+.title{
+    position: relative;;
+    top:40px;
+}
+.title h2{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    text-align: center;
+    text-decoration: underline;
+}
+.result{
+    height: 100%;
+    position: relative;
+    top:350px;   
+    width: 100%;
+    z-index: 2;
+}
+.result h3 {
+    font-size:18px;
+    margin:0;
+    padding: 0;
+}
+.clock{
+    float: left;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    margin-left: 40%;
+    margin-top: 25px;
+}
+.clock p{
+    position: absolute;
+    left: 17px;
+    top:15px;
+    font-size: 26px;
+}
+.text{
+    position: absolute;
+    top:135px;
+    margin-left: 5%;
+}
+#titleOfButtons{
+    margin-top:35px;
+    text-align: center;
+    font-size: 28px;
+    text-decoration: underline;
+}
+#pressure, #puls{
+    font-size: 24px;
+    font-weight: bold;
+}
+.timer{
+    margin: 0;
+    padding: 20px;
+}
+.timer p{
+    font-size: 28px;
+    text-align: center;
+    color: #FFF;
+}
+.errorTimer{
+    margin: 0;
+    padding: 10px;
+}
+.errorTimer p{
+    font-size: 24px;
+    text-align: center;
+    color: #FFF;
+}
+.errorOfTouch{
+    display: none;
+    padding: 15px;
+    z-index:10;
+    position: absolute;
+    top:120px;
+    left: 0%;
+    width: 50%;
+    background: #2C2C2C;
+    color:#FFFFFF;
+    }
+.buttonError{
+    margin: 10px; 
+    padding: 5px 0 0 0 ;
+    height: 30px;
+    width: 80%;
+    background: #fff;
+    color:black;
+    text-align: center;
+}
+.buttonError:hover{
+    color:#fff;
+    background: black;
+    cursor: pointer;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CardioSensor</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/foto2.png" type="image/png">
+    <meta charset="utf-8">
+</head>
+<body class="bodyPage">
+    <div  class="threeBlocks" id="instruction">
+        <h3>Порядок виконання:</h3>
+        <p> 1. У правому діалогову вікні розміщені 5 сенсорних кнопок. Доторкніться до них пальцями правої руки;<br>
+            2. Лівою рукою натисність клавішу "Пробіл" або кнопку "ПУСК";<br>
+            2. Через 3 секунди кнопки повинні змінити свій колір із червоного на синій вразі постійно дотику до екрану монітора;<br>
+            3. Протягом 20 секунд на екрані монітора відображатиметься робота серця, а по завершенню часу буде поданого результати діагностики з наступними характеристиками:<br>
+            - артеріальний тиск;<br>
+            - пульс;</p>
+            <div id ="start">
+                <p>ПУСК</p>
+            </div>
+            <div class = "timer">            
+                <p id = "timerOf3S">3</p>
+            </div></div>
+
+            <div class="threeBlocks" id="cardioGrafic">
+                <svg id="mySVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink ">
+                    <div class="title">
+                        <h2>Електрокардіограма</h2>
+                    </div>
+                </svg>
+                <div class="result">
+                    <div class="clock">
+                        <p id="timer">20</p>
+                        <svg id="mySvgClock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <circle cx="32" cy="32" r="25" stroke="#2C2C2C" stroke-width="1" fill="#FFF"></circle>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <h3>Артеріальний тиск</h3>
+                        <p id="pressure"></p>
+                        <h3>Пульс</h3>
+                        <p id="puls"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "threeBlocks" id="buttons">
+                <div id="titleOfButtons">Сенсорна панель</div>
+                <div class="but" id="button1"></div>
+                <div class="but" id="button2"></div>
+                <div class="but" id="button3"></div>
+                <div class="but" id="button4"></div>
+                <div class="but" id="button5"></div>
+            </div>
+
+            <center> <div class = "errorOfTouch" id = "error">
+                <div class = "textField"><p>Помилка!<br> Після натискання кнопки "Продовжити" у Вас є три секунди, щоб розташувати пальці на екрані монітора.<br> По завершенню часу продовжиться робота кардіографа.
+                </p></div> 
+                <div class = "errorTimer"><p id = "errorTimerOf3S">3</p></div>
+                <div class = "buttonError" id = "continue"><p>Продовжити</p></div>
+                <div class = "buttonError" id = "reset1"><p>Повторити</p></div>
+            </div></center>
+
+            <center> <div class = "errorOfTouch" id = "resetProgram">
+                <div class = "textField"><p>Діагностика завершена успішно. Для повторної роботи програми натисніть "Повторити"</p></div>
+                <div class = "buttonError" id = "reset2"><p>Повторити</p></div>
+            </div></center>
+
+        </body>
+        </html>
